@@ -1,0 +1,57 @@
+body{
+  padding:0px;
+  margin:0px;
+  scroll-behavior:smooth;
+  background-color:#ffffff;
+}
+.hero{
+  padding:30px;
+  width:100%;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero img{
+  height:auto;
+  widht:50%;
+}
+.hero p{
+  font-size:30px;
+}
+.services{
+  padding:30px;
+  display:flex;
+  flex-direction:column;  
+}
+.services div{
+  padding-top:30px;
+}
+.services h1{
+  padding-top:20px;
+  font-size:35px;
+}
+.services p{
+  font-size:30px;
+}
+.services button{
+  background-color:#e8e6e6;
+  padding:10px;
+}
+.services button:hover{
+  background-color:#ffffff;
+  cursor:pointer;
+}
+.about{
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+}
+.about div{
+  padding-top:30px;
+  font-size:30px;
+}
+.footer{
+}
+  
+  
