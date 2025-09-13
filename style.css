@@ -4,12 +4,13 @@ body{
   scroll-behavior:smooth;
   background-color:#ffffff;
   font-family:'Montserrat', sans-serif;
+  padding:50px;
+
 }
-.h{
+.h1{
   font-size:40px;
 }
 .hero{
-  padding:30px;
   width:100%;
   height:100vh;
   display:flex;
@@ -26,38 +27,51 @@ body{
   font-size:30px;
 }
 .services{
-  padding:30px;
   display:flex;
   flex-direction:column;  
 }
 .services div{
   padding-top:30px;
+  display:flex;
+  flex-direction:row;
 }
-.services h1{
+.services h2{
   padding-top:20px;
   font-size:35px;
 }
 .services p{
-  font-size:30px;
+  font-size:25px;
 }
 .services button{
   background-color:#e8e6e6;
   padding:10px;
+  font-size:20px;
+  border-radius:10px;
 }
 .services button:hover{
   background-color:#ffffff;
   cursor:pointer;
+  
 }
 .about{
-  padding:30px;
   display:flex;
   flex-direction:column;
 }
 .about div{
   padding-top:30px;
-  font-size:30px;
+  font-size:25px;
 }
 .footer{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  background-color:#e8e6e6;
+  
+}
+.footer a{
+  color:#000000;
+  font-decoration:none;
+  font-size:20px;
 }
   
   
