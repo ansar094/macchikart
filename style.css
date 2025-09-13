@@ -3,6 +3,10 @@ body{
   margin:0px;
   scroll-behavior:smooth;
   background-color:#ffffff;
+  font-family:'Montserrat', sans-serif;
+}
+.h{
+  font-size:40px;
 }
 .hero{
   padding:30px;
@@ -15,6 +19,8 @@ body{
 .hero img{
   height:auto;
   widht:50%;
+  display:block;
+  margin:0 auto;
 }
 .hero p{
   font-size:30px;
