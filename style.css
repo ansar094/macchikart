@@ -7,11 +7,11 @@ body{
   padding:50px;
 
 }
-.h1{
+h1{
   font-size:40px;
 }
 .hero{
-  width:100%;
+  width:auto;
   height:100vh;
   display:flex;
   align-items:center;
@@ -19,7 +19,7 @@ body{
 }
 .hero img{
   height:auto;
-  widht:50%;
+  width:50%;
   display:block;
   margin:0 auto;
 }
@@ -70,7 +70,7 @@ body{
 }
 .footer a{
   color:#000000;
-  font-decoration:none;
+  text-decoration:none;
   font-size:20px;
 }
   
