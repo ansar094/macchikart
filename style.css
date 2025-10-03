@@ -1,79 +1,257 @@
-body{
-  padding:70px;
-  margin:0px;
-  scroll-behavior:smooth;
-  background-color:#ffffff;
-  font-family:'Montserrat', sans-serif;
- 
+/* ===============  Global Reset & Base  =============== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  scroll-behavior: smooth;
 }
-h1{
-  font-size:40px;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #ffffff;
 }
-.hero{
-  width:auto;
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+
+/* ===============  Navbar  =============== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
-.hero img{
-  height:auto;
-  width:50%;
-  display:block;
-  margin:0 auto;
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.hero p{
-  padding:0px;
-  margin:0px;
-  font-size:30px;
+
+.navbar-logo img {
+  width: 40px;
+  height: auto;
+  display: block;
 }
-.services{
-  display:flex;
-  flex-direction:column;  
+
+.navbar-logo p {
+  font-weight: 600;
+  font-size: 20px;
 }
-.services div{
-  padding-top:30px;
-  display:flex;
-  flex-direction:row;
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  font-size: 18px;
 }
-.services h2{
-  padding-top:20px;
-  font-size:35px;
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s;
 }
-.services p{
-  font-size:25px;
+.nav-links a:hover {
+  color: #0077b6;
 }
-.services button{
-  background-color:#e8e6e6;
-  padding:10px;
-  font-size:20px;
-  border-radius:10px;
+
+main, .home, .services, .about, .contacts {
+  padding-top: 80px;
 }
-.services button:hover{
-  background-color:#ffffff;
-  cursor:pointer;
-  
+
+/*  Home */
+.home {
+  min-height: 100vh;
+  padding: 100px 40px 40px;
+  display: flex;                  /* side-by-side layout */
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #e0f7fa 0%, #ffffff 100%);
 }
-.about{
-  display:flex;
-  flex-direction:column;
+
+.home .slogan {
+  flex: 1;
+  max-width: 500px;
 }
-.about div{
-  padding-top:30px;
-  font-size:25px;
+
+.home .slogan img {
+  width: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
-.footer{
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-  background-color:#e8e6e6;
-  
+
+.home .slogan p {
+  margin: 15px 0;
+  font-size: 1.3rem;
 }
-.footer a{
-  color:#000000;
-  text-decoration:none;
-  font-size:20px;
+
+.home .logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
-  
-  
+
+.home .logo img {
+  width: 350px;          /* big logo on desktop */
+  max-width: 90%;
+  height: auto;
+}
+
+/*  Services  */
+.services {
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service .fish-image img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.service .info p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.service .info button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #0077b6;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.service .info button:hover {
+  background-color: #005f8e;
+}
+
+/*   About   */
+.about {
+  padding: 60px 20px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.about-info {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+}
+
+/*   Contacts   */
+.contacts {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.contacts .qrcode img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.media-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.media-links a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+.media-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===============  Scroll Section  =============== */
+.scroll {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* ===============  Responsive Design  =============== */
+
+/* Tablets and below */
+@media (max-width: 900px) {
+  .service {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service .fish-image img {
+    width: 80%;
+  }
+}
+
+/* Stack hero content & shrink logo on mobile */
+@media (max-width: 700px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px 40px;
+  }
+  .home .slogan {
+    margin-bottom: 30px;
+  }
+  .home .logo img {
+    width: 220px;
+  }
+}
+
+/* Smaller navbar tweaks on phones */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 15px;
+  }
+  .nav-links {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .services h2,
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-info {
+    font-size: 0.95rem;
+  }
+
+  .service .info button {
+    width: 100%;
+  }
+}
